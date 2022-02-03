@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Orphic Builds New",
-    "currentPage": "index.html",
+    "currentPage": "past-work.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -51,7 +51,7 @@
         "url": "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "favicon": "@PROJECT_PATH@/assets/images/new-logo-10.png",
+    "favicon": "@PROJECT_PATH@/assets/images/new-logo-11.png",
     "imageResize": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -681,7 +681,7 @@
     "past-work.html": {
       "settings": {
         "meta_descr": "",
-        "title": "Past Work",
+        "title": "Past Work | Orphic Builds",
         "order": 1
       },
       "components": [
