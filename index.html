@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html  >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.12.4, https://mobirise.com -->
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.12.4, mobirise.com">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/new-logo-11.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/new-logo-10.png" type="image/x-icon">
   <meta name="description" content="">
   
   
@@ -67,7 +67,7 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/i">web creation software</a></section><section class="cid-sWoP3PSDtp mbr-fullscreen mbr-parallax-background" id="header2-4">
+<section class="cid-sWoP3PSDtp mbr-fullscreen mbr-parallax-background" id="header2-4">
 
     
 
@@ -81,7 +81,7 @@
                 
                 <p class="mbr-text pb-3 mbr-fonts-style display-5">
                     Providing premium builds, for affordable prices. It's that simple.</p>
-                
+                <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-4" href="javascript:OpenModal('Test') Close">LEARN MORE</a></div>
             </div>
         </div>
     </div>
@@ -90,6 +90,79 @@
             <i class="mbri-down mbr-iconfont"></i>
         </a>
     </div>
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-d" data-rv-view="13">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="Test" tabindex="-1" role="dialog" aria-labelledby="TestLabel" aria-hidden="true">  <div class="modal-dialog  " style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="TestLabel">Modal title</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="Test_body">Modal body text goes here.</div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Close</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#Test").on("hidden.bs.modal", function () { 
+      var html = $( "#Test_body" ).html(); 
+      $( "#Test_body" ).empty(); 
+      $( "#Test_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#Test") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
 </section>
 
 <section class="features1 cid-sWoPUySOeY" id="features1-5">
